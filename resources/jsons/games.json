@@ -1,0 +1,212 @@
+[
+  {
+    "gameID": "212581",
+    "title": "Cyberpunk 2077",
+    "description": "Um RPG de ação e aventura em mundo aberto ambientado na megalópole de Night City, onde você joga como um mercenário cyberpunk.",
+    "metacriticScore": 86,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "99.90",
+    "normalPrice": "199.90",
+    "savings": "50.02",
+    "thumb": "resources/images/cyberpunk2077.jpg"
+  },
+  {
+    "gameID": "112330",
+    "title": "The Witcher 3: Wild Hunt",
+    "description": "Acompanhe Geralt de Rivia, um caçador de monstros profissional, em uma jornada épica em um vasto mundo de fantasia sombria.",
+    "metacriticScore": 93,
+    "store": {
+      "name": "GOG",
+      "icon": "resources/images/goglogo.png"
+    },
+    "salePrice": "19.99",
+    "normalPrice": "79.99",
+    "savings": "75.01",
+    "thumb": "resources/images/thewitcher3remastered.jpg"
+  },
+  {
+    "gameID": "201323",
+    "title": "Red Dead Redemption 2",
+    "description": "Uma história épica de vida implacável no coração dos Estados Unidos, focada na gangue Van der Linde fugindo da lei.",
+    "metacriticScore": 97,
+    "store": {
+      "name": "Epic Games",
+      "icon": "resources/images/epiclogo.png"
+    },
+    "salePrice": "79.90",
+    "normalPrice": "239.90",
+    "savings": "66.69",
+    "thumb": "resources/images/reddead2.jpg"
+  },
+  {
+    "gameID": "100223",
+    "title": "Grand Theft Auto VI",
+    "description": "Explore o mundo deslumbrante de Vice City nesta nova e aclamada experiência de mundo aberto da Rockstar Games.",
+    "metacriticScore": 96,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "38.90",
+    "normalPrice": "82.90",
+    "savings": "53.07",
+    "thumb": "resources/images/gta6.jpg"
+  },
+  {
+    "gameID": "229340",
+    "title": "Elden Ring",
+    "description": "Levante-se, Maculado, e seja guiado pela graça para portar o poder do Elden Ring e se tornar um Lorde nas Terras Intermédias.",
+    "metacriticScore": 96,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "174.90",
+    "normalPrice": "249.90",
+    "savings": "30.01",
+    "thumb": "resources/images/eldenring.jpg"
+  },
+  {
+    "gameID": "164532",
+    "title": "Hollow Knight",
+    "description": "Forje seu próprio caminho em Hollow Knight! Uma aventura épica de ação em 2D por um vasto reino arruinado de insetos e heróis.",
+    "metacriticScore": 90,
+    "store": {
+      "name": "GOG",
+      "icon": "resources/images/goglogo.png"
+    },
+    "salePrice": "23.49",
+    "normalPrice": "46.99",
+    "savings": "50.01",
+    "thumb": "resources/images/hollowknight.jpg"
+  },
+  {
+    "gameID": "153920",
+    "title": "Stardew Valley",
+    "description": "Você herdou a antiga fazenda do seu avô. Armado com ferramentas de segunda mão e algumas moedas, você vai começar sua nova vida.",
+    "metacriticScore": 89,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "19.99",
+    "normalPrice": "24.99",
+    "savings": "20.00",
+    "thumb": "resources/images/stardewvalley.jpg"
+  },
+  {
+    "gameID": "249301",
+    "title": "Resident Evil 4 Remake",
+    "description": "Sobrevivência e terror repaginados para a nova geração, modernizando o clássico de 2005 com gráficos e jogabilidade de ponta.",
+    "metacriticScore": 93,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "124.50",
+    "normalPrice": "249.00",
+    "savings": "50.00",
+    "thumb": "resources/images/re4remake.jpg"
+  },
+  {
+    "gameID": "219504",
+    "title": "Baldur's Gate 3",
+    "description": "Reúna seu grupo e retorne a Forgotten Realms em um conto sobre amizade e traição, sacrifício e sobrevivência, além da atração do poder absoluto.",
+    "metacriticScore": 96,
+    "store": {
+      "name": "GOG",
+      "icon": "resources/images/goglogo.png"
+    },
+    "salePrice": "159.99",
+    "normalPrice": "199.99",
+    "savings": "20.00",
+    "thumb": "resources/images/baldursgate3.jpg"
+  },
+  {
+    "gameID": "235619",
+    "title": "God of War",
+    "description": "Com a vingança contra os deuses do Olimpo no passado, Kratos agora vive no reino das divindades e monstros nórdicos.",
+    "metacriticScore": 93,
+    "store": {
+      "name": "Epic Games",
+      "icon": "resources/images/epiclogo.png"
+    },
+    "salePrice": "99.95",
+    "normalPrice": "199.90",
+    "savings": "50.00",
+    "thumb": "resources/images/gow.jpg"
+  },
+  {
+    "gameID": "201593",
+    "title": "Hades",
+    "description": "Desafie o deus dos mortos enquanto você batalha para sair do Submundo neste rogue-like de ação dos criadores de Bastion e Transistor.",
+    "metacriticScore": 93,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "36.99",
+    "normalPrice": "73.99",
+    "savings": "50.00",
+    "thumb": "resources/images/hades.jpg"
+  },
+  {
+    "gameID": "89332",
+    "title": "Terraria",
+    "description": "Cave, lute, explore, construa! Nada é impossível neste jogo de aventura cheio de ação focado na exploração de mundos dinâmicos.",
+    "metacriticScore": 83,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "16.49",
+    "normalPrice": "32.99",
+    "savings": "50.01",
+    "thumb": "resources/images/terraria.jpg"
+  },
+  {
+    "gameID": "167520",
+    "title": "Dead Cells",
+    "description": "Dead Cells é um rogue-lite de ação em plataforma focado em combate rápido, exploração e na evolução do personagem a cada morte.",
+    "metacriticScore": 89,
+    "store": {
+      "name": "Epic Games",
+      "icon": "resources/images/epiclogo.png"
+    },
+    "salePrice": "23.74",
+    "normalPrice": "47.49",
+    "savings": "50.01",
+    "thumb": "resources/images/deadcells.jpg"
+  },
+  {
+    "gameID": "241512",
+    "title": "Marvel's Spider-Man Remastered",
+    "description": "No jogo, os mundos de Peter Parker e do Spider-Man entram em conflito em uma história original repleta de ação na cidade de Nova York.",
+    "metacriticScore": 87,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "149.94",
+    "normalPrice": "249.90",
+    "savings": "40.00",
+    "thumb": "resources/images/spidermanremastered.jpg"
+  },
+  {
+    "gameID": "10000",
+    "title": "Minecraft",
+    "description": "Explore mundos infinitos e construa de tudo, desde casas simples até grandiosos castelos neste lendário jogo de sobrevivência e criatividade.",
+    "metacriticScore": 93,
+    "store": {
+      "name": "Epic Games",
+      "icon": "resources/images/epiclogo.png"
+    },
+    "salePrice": "74.95",
+    "normalPrice": "149.90",
+    "savings": "50.00",
+    "thumb": "resources/images/minecraft.jpg"
+  }
+]
