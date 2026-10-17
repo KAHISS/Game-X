@@ -22,32 +22,70 @@ class _LibraryPageState extends State<LibraryPage> {
 
   Future<_LibraryData> _loadLibrary() async {
     final appState = AppStateScope.of(context);
+    final loggedInUser = appState.currentUser;
+    if (loggedInUser == null) {
+      throw StateError('É necessário estar autenticado para carregar a conta.');
+    }
+
     final files = await Future.wait([
-      rootBundle.loadString('resources/jsons/library.json'),
+      rootBundle.loadString('resources/jsons/users.json'),
       rootBundle.loadString('resources/jsons/games.json'),
     ]);
-    final libraryJson = jsonDecode(files[0]) as Map<String, dynamic>;
+    final usersJson = jsonDecode(files[0]) as Map<String, dynamic>;
+    final users = usersJson['usuarios'] as List<dynamic>? ??
+        [usersJson['usuario']];
+    final userEmail = loggedInUser.email.trim().toLowerCase();
+    final matchingUser = users
+        .whereType<Map<String, dynamic>>()
+        .where(
+          (user) =>
+              (user['email'] as String).trim().toLowerCase() == userEmail,
+        );
+    if (matchingUser.isEmpty) {
+      throw StateError(
+        'Não há usuário cadastrado com o e-mail ${loggedInUser.email}.',
+      );
+    }
+    final userJson = matchingUser.first;
+
     final gamesJson = jsonDecode(files[1]) as List<dynamic>;
     final gamesById = {
       for (final item in gamesJson)
         (item as Map<String, dynamic>)['gameID'] as String: Game.fromJson(item),
     };
-    final userJson = libraryJson['usuario'] as Map<String, dynamic>;
-    final libraryGames = (userJson['biblioteca'] as List<dynamic>).map((item) {
+    Game gameFromAccountEntry(dynamic item, String collectionName) {
       final entry = item as Map<String, dynamic>;
       final gameId = entry['gameID'] as String;
       final game = gamesById[gameId];
       if (game == null) {
         throw FormatException(
-          'O jogo com ID $gameId da biblioteca não existe em games.json.',
+          'O jogo com ID $gameId do $collectionName não existe em games.json.',
         );
       }
+      return game;
+    }
+
+    final libraryGames = (userJson['biblioteca'] as List<dynamic>).map((item) {
+      final game = gameFromAccountEntry(item, 'biblioteca');
+      final entry = item as Map<String, dynamic>;
       return LibraryGame(
         game: game,
         activationCode: entry['codigoAtivacao'] as String,
       );
     }).toList();
-    appState.initializeLibrary(libraryGames);
+    final cartGames = (userJson['carrinho'] as List<dynamic>)
+        .map((item) => gameFromAccountEntry(item, 'carrinho'))
+        .toList();
+    final initialized = appState.initializeAccountData(
+        email: userEmail,
+        libraryGames: libraryGames,
+        cartGames: cartGames,
+      );
+    if (!initialized) {
+      throw StateError(
+        'O usuário autenticado mudou antes do carregamento da conta terminar.',
+      );
+    }
 
     return _LibraryData(user: userJson);
   }

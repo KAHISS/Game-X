@@ -1,0 +1,56 @@
+{
+  "usuarios": [
+    {
+      "nome": "Mario da Silva",
+      "email": "mariosilva@gmail.com",
+      "biblioteca": [
+        {
+          "gameID": "212581",
+          "codigoAtivacao": "CP77-ALEX-7KQ9-M2PX"
+        },
+        {
+          "gameID": "112330",
+          "codigoAtivacao": "W3WH-ALEX-4F8N-R6TY"
+        },
+        {
+          "gameID": "201323",
+          "codigoAtivacao": "RDR2-ALEX-9J3C-L5WV"
+        },
+        {
+          "gameID": "229340",
+          "codigoAtivacao": "ELDR-ALEX-2H7M-Q8KD"
+        },
+        {
+          "gameID": "153920",
+          "codigoAtivacao": "STDV-ALEX-6P4X-T9NB"
+        },
+        {
+          "gameID": "201593",
+          "codigoAtivacao": "HADES-ALEX-3R5W-Y7FC"
+        },
+        {
+          "gameID": "89332",
+          "codigoAtivacao": "TERR-ALEX-8N2K-D4QJ"
+        },
+        {
+          "gameID": "164532",
+          "codigoAtivacao": "HLKN-ALEX-5M9T-X3RB"
+        }
+      ],
+      "carrinho": [
+        {
+          "gameID": "249301"
+        },
+        {
+          "gameID": "526870"
+        }
+      ]
+    },
+    {
+      "nome": "Ana Souza",
+      "email": "ana.souza@example.com",
+      "biblioteca": [],
+      "carrinho": []
+    }
+  ]
+}

@@ -57,8 +57,30 @@ flutter:
   uses-material-design: true
 
   assets:
-    - resources/jsons/
-    - resources/images/
+    - resources/jsons/games.json
+    - resources/jsons/users.json
+    - resources/images/baldursgate3.jpg
+    - resources/images/cyberpunk2077.jpg
+    - resources/images/deadcells.jpg
+    - resources/images/eldenring.jpg
+    - resources/images/epiclogo.png
+    - resources/images/goglogo.png
+    - resources/images/gow.jpg
+    - resources/images/gta6.jpg
+    - resources/images/hades.jpg
+    - resources/images/hollowknight.jpg
+    - resources/images/legobatmanlegacy.jpg
+    - resources/images/legomarvelsuperheroes.jpg
+    - resources/images/minecraft.jpg
+    - resources/images/png-transparent-tux-linux-mint-logo-linux-logo-vertebrate-bird-thumbnail.png
+    - resources/images/re4remake.jpg
+    - resources/images/reddead2.jpg
+    - resources/images/satisfactory.jpg
+    - resources/images/spidermanremastered.jpg
+    - resources/images/stardewvalley.jpg
+    - resources/images/steamlogo.png
+    - resources/images/terraria.jpg
+    - resources/images/thewitcher3remastered.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -14,7 +14,7 @@ class AppState extends ChangeNotifier {
   final List<Game> _cart = [];
   final List<LibraryGame> _initialLibraryGames = [];
   final List<LibraryGame> _purchasedGames = [];
-  bool _libraryInitialized = false;
+  String? _initializedAccountEmail;
 
   int get currentPageIndex => _currentPageIndex;
   GamesViewMode get gamesViewMode => _gamesViewMode;
@@ -32,11 +32,24 @@ class AppState extends ChangeNotifier {
   bool ownsGame(String gameId) =>
       libraryGames.any((entry) => entry.game.id == gameId);
 
-  void initializeLibrary(List<LibraryGame> games) {
-    if (_libraryInitialized) return;
-    _initialLibraryGames.addAll(games);
-    _libraryInitialized = true;
+  bool initializeAccountData({
+    required String email,
+    required List<LibraryGame> libraryGames,
+    required List<Game> cartGames,
+  }) {
+    if (_currentUser?.email.toLowerCase() != email.toLowerCase()) {
+      return false;
+    }
+    if (_initializedAccountEmail == email.toLowerCase()) return true;
+
+    _initialLibraryGames.clear();
+    _purchasedGames.clear();
+    _cart.clear();
+    _initialLibraryGames.addAll(libraryGames);
+    _cart.addAll(cartGames);
+    _initializedAccountEmail = email.toLowerCase();
     notifyListeners();
+    return true;
   }
 
   bool addToCart(Game game) {
@@ -60,9 +73,8 @@ class AppState extends ChangeNotifier {
   int completePurchase() {
     var addedCount = 0;
     for (final game in _cart) {
-      final alreadyOwned = _initialLibraryGames.any(
-            (entry) => entry.game.id == game.id,
-          ) ||
+      final alreadyOwned =
+          _initialLibraryGames.any((entry) => entry.game.id == game.id) ||
           _purchasedGames.any((entry) => entry.game.id == game.id);
       if (alreadyOwned) continue;
 
@@ -70,10 +82,7 @@ class AppState extends ChangeNotifier {
           .toRadixString(36)
           .toUpperCase();
       _purchasedGames.add(
-        LibraryGame(
-          game: game,
-          activationCode: 'GAME-${game.id}-$uniquePart',
-        ),
+        LibraryGame(game: game, activationCode: 'GAME-${game.id}-$uniquePart'),
       );
       addedCount++;
     }
