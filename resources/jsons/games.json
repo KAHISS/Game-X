@@ -208,5 +208,47 @@
     "normalPrice": "149.90",
     "savings": "50.00",
     "thumb": "resources/images/minecraft.jpg"
+  },
+  {
+    "gameID": "526870",
+    "title": "Satisfactory",
+    "description": "Construa e automatize fábricas em um planeta alienígena, explore novos territórios e otimize linhas de produção em primeira pessoa.",
+    "metacriticScore": 91,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "89.95",
+    "normalPrice": "119.95",
+    "savings": "25.01",
+    "thumb": "resources/images/satisfactory.jpg"
+  },
+  {
+    "gameID": "2134010",
+    "title": "LEGO Batman: Legacy of the Dark Knight",
+    "description": "Viva uma aventura de ação no universo LEGO Batman, explore Gotham City e enfrente alguns dos maiores vilões do Cavaleiro das Trevas.",
+    "metacriticScore": 85,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "199.90",
+    "normalPrice": "249.90",
+    "savings": "20.00",
+    "thumb": "resources/images/legobatmanlegacy.jpg"
+  },
+  {
+    "gameID": "249130",
+    "title": "LEGO Marvel Super Heroes",
+    "description": "Reúna heróis da Marvel em uma aventura LEGO cheia de ação, humor e exploração para impedir os planos de Loki e outros vilões.",
+    "metacriticScore": 82,
+    "store": {
+      "name": "Steam",
+      "icon": "resources/images/steamlogo.png"
+    },
+    "salePrice": "39.90",
+    "normalPrice": "79.90",
+    "savings": "50.06",
+    "thumb": "resources/images/legomarvelsuperheroes.jpg"
   }
 ]
