@@ -67,11 +67,21 @@ flutter doctor
 
 ### Passo a passo
 
-1. Clone o repositório e entre na pasta:
+1. Clone o repositório (escolha uma das opções) e entre na pasta:
 
    ```bash
-   git clone <URL-DO-REPOSITORIO>
-   cd kahiss-game-x
+   # HTTPS
+   git clone https://github.com/KAHISS/Game-X.git
+
+   # SSH
+   git clone git@github.com:KAHISS/Game-X.git
+
+   # GitHub CLI
+   gh repo clone KAHISS/Game-X
+   ```
+
+   ```bash
+   cd Game-X
    ```
 
 2. Instale as dependências:
@@ -91,6 +101,20 @@ flutter doctor
    ```bash
    flutter run
    ```
+
+### Rodar pelo VS Code
+
+1. Instale as extensões **Flutter** e **Dart** (a extensão Flutter já instala a do Dart).
+2. Abra a pasta do projeto: **File > Open Folder...** e selecione `Game-X`.
+3. Abra o terminal integrado (**Ctrl+`**) e rode `flutter pub get`. O VS Code também pode sugerir isso automaticamente ao abrir o `pubspec.yaml`.
+4. Escolha o dispositivo na barra de status, no canto inferior direito (por exemplo, um emulador Android ou o Chrome). Se não houver emulador, clique no seletor e escolha **Create Android emulator**.
+5. Abra `lib/main.dart` e inicie o app de uma destas formas:
+   - pressione **F5** (**Run > Start Debugging**);
+   - ou **Ctrl+F5** (**Run > Run Without Debugging**);
+   - ou clique em **Run** acima da função `main()`.
+6. Com o app rodando, use **r** no terminal (ou o ícone de raio no painel de depuração) para *hot reload*, e **R** para *hot restart*.
+
+Se algo não funcionar, abra a paleta de comandos (**Ctrl+Shift+P**) e rode **Flutter: Run Flutter Doctor** para ver o que está faltando.
 
 ### Rodar em outra plataforma (opcional)
 
